@@ -19,7 +19,7 @@ KRASNOYARSK_TZ = pytz.timezone('Asia/Krasnoyarsk')
 EXAMS = []
 
 SCHEDULE = {
-  "even": {
+  "odd": {
     "monday": [
       {
         "time": "08:00-09:30",
@@ -213,7 +213,7 @@ SCHEDULE = {
     "saturday": [],
     "sunday": []
   },
-  "odd": {
+  "even": {
     "monday": [
       {
         "time": "08:00-09:30",
