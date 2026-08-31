@@ -711,20 +711,7 @@ async def start_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "/today — сегодня\n"
         "/tomorrow — завтра\n"
         "/week — вся неделя\n"
-        "/day <день> — конкретный день (напр. /day вторник)\n"
-        "/setchat [chat_id] [thread_id] — настроить автоотправку после последней пары\n"
-        "/disable_auto — отключить автоотправку\n"
-        "/sendtext <текст> — отправить текст в настроенный чат/топик\n\n"
-        "<b>Команды экзаменов:</b>\n"
-        "/exams — список всех экзаменов\n"
-        "/nearexam — ближайший экзамен\n"
-        "/setexam [chat_id] [thread_id] — настроить напоминания об экзаменах\n\n"
-        "<b>Примеры:</b>\n"
-        "<code>/setchat</code> — в ЛС (отправка в этот чат)\n"
-        "<code>/setchat -1001234567890</code> — в группу\n"
-        "<code>/setchat -1001234567890 42</code> — в топик группы\n\n"
-        "<code>/setexam</code> — включить напоминания об экзаменах\n"
-        "<code>/setexam -1001234567890 42</code> — в конкретный чат/топик"
+        "/day &lt;день&gt; — конкретный день (напр. /day вторник)\n"
         + FOOTER_LINK
     )
     msg = await update.message.reply_text(text, parse_mode='HTML')
